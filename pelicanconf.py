@@ -55,10 +55,10 @@ DEFAULT_PAGINATION = False
 #RELATIVE_URLS = True
 
 
-##THEME= "C:/git-repos/pelican-themes/svbhack"
-THEME= "C:/git-repos/pelican-elegant-1.3/pelican-elegant-1.3"
+THEME= "C:/git-repos/pelican-themes/elegant"
+##THEME= "C:/git-repos/pelican-elegant-1.3/pelican-elegant-1.3"
 ##PLUGIN_PATHS = ['C:/git-repos/pelican-plugins']
 ##PLUGINS = ['sitemap', 'extract_toc', 'tipue_search', 'post_stats']
-##MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'headerid', 'toc']
+##MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'headerid', 'to]
 DIRECT_TEMPLATES = (('index', 'tags', 'categories','archives', 'search', '404'))
 STATIC_PATHS = ['theme/images', 'images']
