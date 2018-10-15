@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Michael McGurk'
 SITENAME = u'Laptop Biology - Mike McGurk'
-SITEURL = 'https://laptopbiologist.github.io/'
+SITEURL = 'https://laptopbiologist.github.io'
 
 PATH = 'content'
 
@@ -56,8 +56,8 @@ AUTHOR_FEED_RSS = None
 ##         ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('Twitter', 'http://twitter.com/laptopbiologist'),
-          ('Github', 'http://github.com/laptopbiologist'),
+SOCIAL = (('Twitter', 'https://twitter.com/laptopbiologist'),
+          ('Github', 'https://github.com/laptopbiologist'),
           ('Email','mailto:mpm289@cornell.edu'))
 
 DEFAULT_PAGINATION = False

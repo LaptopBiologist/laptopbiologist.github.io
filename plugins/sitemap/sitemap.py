@@ -27,9 +27,9 @@ TXT_HEADER = """{0}/index.html
 """
 
 XML_HEADER = """<?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
-xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9 https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
 """
 
 XML_URL = """
@@ -137,7 +137,7 @@ class SitemapGenerator(object):
 
         if getattr(page, 'status', 'published') != 'published':
             return
-           
+
         if getattr(page, 'private', 'False') == 'True':
             return
 
