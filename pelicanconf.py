@@ -63,7 +63,7 @@ DEFAULT_PAGINATION = False
 #RELATIVE_URLS = True
 
 
-THEME= "C:/git-repos/pelican-themes/elegant"
+THEME= "themes/elegant"
 ##THEME= "C:/git-repos/pelican-elegant-1.3/pelican-elegant-1.3"
 ##PLUGIN_PATHS = ['C:/git-repos/pelican-plugins']
 ##PLUGIN_PATHS = [u'C:/git-repos/pelican-plugins']
