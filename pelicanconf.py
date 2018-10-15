@@ -28,9 +28,9 @@ LANDING_PAGE_ABOUT={"title":"Tackling biological questions with computational ap
 "details":"I'm a computional biologist in the sense that I love thinking about"}
 
 
-ARTICLE_PATHS = ['articles',]
-ARTICLE_URL = 'articles/{category}/{slug}.html'
-ARTICLE_SAVE_AS = 'articles/{category}/{slug}.html'
+##ARTICLE_PATHS = ['blogs',]
+##ARTICLE_URL = 'articles/{category}/{slug}.html'
+##ARTICLE_SAVE_AS = 'articles/{category}/{slug}.html'
 ##PAGE_URL = '{slug}.html'
 ##PAGE_SAVE_AS = PAGE_URL
 
