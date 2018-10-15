@@ -14,7 +14,7 @@ DEFAULT_LANG = u'English'
 
 
 #Theme
-MD_EXTENSIONS = [
+MARKDOWN = [
     'codehilite(css_class=highlight)',
     'extra',
     'headerid',
@@ -66,18 +66,18 @@ DEFAULT_PAGINATION = False
 THEME= "C:/git-repos/pelican-themes/elegant"
 ##THEME= "C:/git-repos/pelican-elegant-1.3/pelican-elegant-1.3"
 ##PLUGIN_PATHS = ['C:/git-repos/pelican-plugins']
-PLUGIN_PATHS = [u'C:/git-repos/pelican-plugins']
-PLUGINS = [
-    'sitemap',
-    'tipue_search',
-    'extract_toc',
-    'related_posts',
-    'latex',
-    'liquid_tags.img',
-    'share_post',
-    'series',
-    'neighbors'
-]
+##PLUGIN_PATHS = [u'C:/git-repos/pelican-plugins']
+##PLUGINS = [
+##    'sitemap',
+##    'tipue_search',
+##    'extract_toc',
+##    'related_posts',
+##    'latex',
+##    'liquid_tags.img',
+##    'share_post',
+##    'series',
+##    'neighbors'
+##]
 ##PLUGINS = ['sitemap', 'extract_toc', 'tipue_search', 'post_stats']
 ##MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'headerid', 'to]
 DIRECT_TEMPLATES = (('index', 'tags', 'categories','archives', 'search', '404'))
