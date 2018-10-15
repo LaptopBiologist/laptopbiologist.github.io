@@ -22,7 +22,7 @@ MD_EXTENSIONS = [
 ]
 DEFAULT_CATEGORY = 'Blogs'
 USE_FOLDER_AS_CATEGORY = False
-USER_LOGO_URL=SITEURL+'/images/your_logo.png'
+##USER_LOGO_URL=SITEURL+'/images/your_logo.png'
 LANDING_PAGE_ABOUT={"title":"Tackling biological questions with computational approaches",\
 "details":"I'm a computional biologist in the sense that I love thinking about "}
 
@@ -31,9 +31,9 @@ ARTICLE_SAVE_AS = ARTICLE_URL
 PAGE_URL = '{slug}.html'
 PAGE_SAVE_AS = PAGE_URL
 
-CATEGORY_URL = 'categories/{slug}.html'
-CATEGORY_SAVE_AS = CATEGORY_URL
-CATEGORIES_SAVE_AS = 'categories.html'
+##CATEGORY_URL = 'categories/{slug}.html'
+##CATEGORY_SAVE_AS = CATEGORY_URL
+##CATEGORIES_SAVE_AS = 'categories.html'
 
 TAG_URL = 'tags/{slug}.html'
 TAG_SAVE_AS = TAG_URL
