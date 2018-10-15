@@ -26,18 +26,18 @@ USE_FOLDER_AS_CATEGORY = False
 LANDING_PAGE_ABOUT={"title":"Tackling biological questions with computational approaches",\
 "details":"I'm a computional biologist in the sense that I love thinking about "}
 
-ARTICLE_URL = '{category}/{slug}.html'
-ARTICLE_SAVE_AS = ARTICLE_URL
-PAGE_URL = '{slug}.html'
-PAGE_SAVE_AS = PAGE_URL
+##ARTICLE_URL = '{category}/{slug}.html'
+##ARTICLE_SAVE_AS = ARTICLE_URL
+##PAGE_URL = '{slug}.html'
+##PAGE_SAVE_AS = PAGE_URL
 
 ##CATEGORY_URL = 'categories/{slug}.html'
 ##CATEGORY_SAVE_AS = CATEGORY_URL
 ##CATEGORIES_SAVE_AS = 'categories.html'
 
-TAG_URL = 'tags/{slug}.html'
-TAG_SAVE_AS = TAG_URL
-TAGS_SAVE_AS = 'tags.html'
+##TAG_URL = 'tags/{slug}.html'
+##TAG_SAVE_AS = TAG_URL
+##TAGS_SAVE_AS = 'tags.html'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
