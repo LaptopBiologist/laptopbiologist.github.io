@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Michael McGurk'
 SITENAME = u'Laptop Biology - Mike McGurk'
-SITEURL = 'https://laptopbiologist.github.io'
+SITEURL = ''
 
 PATH = 'content'
 
@@ -14,12 +14,13 @@ DEFAULT_LANG = u'English'
 
 
 #Theme
-MD_EXTENSIONS = [
-    'codehilite(css_class=highlight)',
-    'extra',
-    'headerid',
-    'toc(anchorlink=true)'
-]
+##MD_EXTENSIONS = [
+##    'codehilite(css_class=highlight)',
+##    'extra',
+##    'headerid',
+##    'toc(anchorlink=true)'
+##]
+MARKDOWN={'extension_configs': {'markdown.extensions.toc':{'permalink':'true'}}}
 DEFAULT_CATEGORY = 'Blogs'
 USE_FOLDER_AS_CATEGORY = False
 ##USER_LOGO_URL=SITEURL+'/images/your_logo.png'
@@ -64,11 +65,12 @@ DEFAULT_PAGINATION = False
 
 
 THEME= "themes/elegant"
-PLUGIN_PATHS=[u'plugins']
+PLUGIN_PATHS=['plugins/']
+##PLUGIN_PATHS = ['C:/git-repos/pelican-plugins']
 PLUGINS = ['sitemap', 'extract_toc', 'tipue_search']
-MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'headerid', 'toc']
-DIRECT_TEMPLATES = (('index', 'tags', 'categories','archives', 'search', '404'))
-STATIC_PATHS = ['theme/images', 'images']
+##MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'headerid', 'toc']
+##DIRECT_TEMPLATES = (('index', 'tags', 'categories','archives', '404'))
+##STATIC_PATHS = ['theme/images', 'images']
 TAG_SAVE_AS = ''
 CATEGORY_SAVE_AS = ''
 AUTHOR_SAVE_AS = ''

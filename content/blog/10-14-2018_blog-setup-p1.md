@@ -10,3 +10,6 @@ But I'm a biologist not a computer scientist by training. I think the last time 
 Googling around for options answered two questions at once "How do I do this?" and "Where do I host the blog?" with  _[Github Pages](with: https://pages.github.com/)_. As it turns out, GitHub--where I store and version control most of my code--allows users to host (for free) static web pages in a repository titled username.github.io. The restriction that they be static meant that the "How?" probably ought to be something that can generate static web pages. It looked like there were several appealling options, with Jekyll and Pelican being the most commonly recommended. I played with Jekyll and bit a really liked (for great ), but all of the guides for converting Jupyter notebooks to web pages seemed like the process was clunky. So I went with Pelican (which is apparently an anagram of the French for 'notebook': calepin)
 
 Now static 
+
+I had t downgrade html5lib using
+pip install --upgrade html5lib==1.0b8
