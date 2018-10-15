@@ -25,10 +25,12 @@ DEFAULT_CATEGORY = 'Blogs'
 USE_FOLDER_AS_CATEGORY = False
 ##USER_LOGO_URL=SITEURL+'/images/your_logo.png'
 LANDING_PAGE_ABOUT={"title":"Tackling biological questions with computational approaches",\
-"details":"I'm a computional biologist in the sense that I love thinking about "}
+"details":"I'm a computional biologist in the sense that I love thinking about"}
 
-##ARTICLE_URL = '{category}/{slug}.html'
-##ARTICLE_SAVE_AS = ARTICLE_URL
+
+ARTICLE_PATHS = ['articles',]
+ARTICLE_URL = 'articles/{category}/{slug}.html'
+ARTICLE_SAVE_AS = 'articles/{category}/{slug}.html'
 ##PAGE_URL = '{slug}.html'
 ##PAGE_SAVE_AS = PAGE_URL
 
@@ -90,5 +92,19 @@ AUTHOR_SAVE_AS = ''
 ##]
 ##PLUGINS = ['sitemap', 'extract_toc', 'tipue_search', 'post_stats']
 ##MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'headerid', 'to]
+SITEMAP = {
+    'exclude': ['tag/', 'category/'],
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.5,
+        'indexes': 0.5,
+        'pages': 0.5
+    },
+    'changefreqs': {
+        'articles': 'monthly',
+        'indexes': 'daily',
+        'pages': 'monthly'
+    }
+}
 DIRECT_TEMPLATES = (('index', 'tags', 'categories','archives', 'search', '404'))
 STATIC_PATHS = ['theme/images', 'images']
