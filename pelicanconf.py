@@ -67,7 +67,7 @@ DEFAULT_PAGINATION = False
 
 
 THEME= "themes/elegant"
-PLUGIN_PATHS=['plugins/']
+PLUGIN_PATHS=['plugins']
 ##PLUGIN_PATHS = ['C:/git-repos/pelican-plugins']
 PLUGINS = ['sitemap', 'extract_toc', 'tipue_search']
 ##MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'headerid', 'toc']
