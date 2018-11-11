@@ -2,14 +2,15 @@
 <%namespace name="base" file="base_helper.tmpl" import="*"/>
 <%namespace name="header" file="base_header.tmpl" import="*"/>
 <%namespace name="footer" file="base_footer.tmpl" import="*"/>
+<%namespace name="annotations" file="annotation_helper.tmpl"/>
 ${set_locale(lang)}
 ${base.html_headstart()}
 <%block name="extra_head">
 ### Leave this block alone.
 </%block>
 ${template_hooks['extra_head']()}
+<link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css">
 </head>
-<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 % if JIDN_theme:
 <body class="${JIDN_theme}">
 %else:
@@ -30,7 +31,11 @@ ${template_hooks['extra_head']()}
 </%doc>
         <nav role="navigation" class="sidebar-nav">
           <a class="sidebar-nav-item" href="/"><i class="fa fa-2x fa-fw fa-home" /> Home</a>
-          <a class="sidebar-nav-item" href="/blog"><i class="fa fa-2x fa-fw fa-user-circle" /> Blog</a>
+          <!--a class="sidebar-nav-item" href="/blog"><i class="fa fa-2x fa-fw fa-user-circle" /> Blog</a-->
+          <a class="sidebar-nav-item" href="/pages/about/index.html"><i class="fa fa-2x fa-fw fa-user-circle" /> About</a-->
+		  <!--a class="sidebar-nav-item" href="/pages/research/index.html"><i class="fa fa-2x fa-fw fa-flask" /> Research</a-->
+		  <a class="sidebar-nav-item" href="/pages/cv/index.html"><i class="fa fa-2x fa-fw fa-graduation-cap" /> Curriculum Vitae</a-->
+		  <a class="sidebar-nav-item" href="/pages/publications/index.html"><i class="fa fa-2x fa-fw fa-book" /> Publications</a-->
         </nav>
         ${header.html_navigation_links()}
     </div>

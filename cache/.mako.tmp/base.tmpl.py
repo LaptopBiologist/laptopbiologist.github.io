@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1541967012.3131728
+_modified_time = 1541978018.601155
 _enable_loop = True
 _template_filename = 'themes/jidn/templates/base.tmpl'
 _template_uri = 'base.tmpl'
@@ -29,6 +29,9 @@ def _mako_generate_namespaces(context):
     ns = runtime.TemplateNamespace('footer', context._clean_inheritance_tokens(), templateuri='base_footer.tmpl', callables=None,  calling_uri=_template_uri)
     context.namespaces[(__name__, 'footer')] = ns
 
+    ns = runtime.TemplateNamespace('annotations', context._clean_inheritance_tokens(), templateuri='annotation_helper.tmpl', callables=None,  calling_uri=_template_uri)
+    context.namespaces[(__name__, 'annotations')] = ns
+
 def render_body(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
@@ -37,25 +40,26 @@ def render_body(context,**pageargs):
         _mako_get_namespace(context, 'base')._populate(_import_ns, ['*'])
         _mako_get_namespace(context, 'header')._populate(_import_ns, ['*'])
         _mako_get_namespace(context, 'footer')._populate(_import_ns, ['*'])
+        messages = _import_ns.get('messages', context.get('messages', UNDEFINED))
+        template_hooks = _import_ns.get('template_hooks', context.get('template_hooks', UNDEFINED))
+        lang = _import_ns.get('lang', context.get('lang', UNDEFINED))
+        def extra_js():
+            return render_extra_js(context._locals(__M_locals))
+        momentjs_locales = _import_ns.get('momentjs_locales', context.get('momentjs_locales', UNDEFINED))
+        date_fanciness = _import_ns.get('date_fanciness', context.get('date_fanciness', UNDEFINED))
         body_end = _import_ns.get('body_end', context.get('body_end', UNDEFINED))
         header = _mako_get_namespace(context, 'header')
-        set_locale = _import_ns.get('set_locale', context.get('set_locale', UNDEFINED))
-        js_date_format = _import_ns.get('js_date_format', context.get('js_date_format', UNDEFINED))
         def content():
             return render_content(context._locals(__M_locals))
         def extra_head():
             return render_extra_head(context._locals(__M_locals))
-        JIDN_theme = _import_ns.get('JIDN_theme', context.get('JIDN_theme', UNDEFINED))
-        date_fanciness = _import_ns.get('date_fanciness', context.get('date_fanciness', UNDEFINED))
-        footer = _mako_get_namespace(context, 'footer')
-        momentjs_locales = _import_ns.get('momentjs_locales', context.get('momentjs_locales', UNDEFINED))
-        def extra_js():
-            return render_extra_js(context._locals(__M_locals))
-        lang = _import_ns.get('lang', context.get('lang', UNDEFINED))
-        messages = _import_ns.get('messages', context.get('messages', UNDEFINED))
+        set_locale = _import_ns.get('set_locale', context.get('set_locale', UNDEFINED))
         base = _mako_get_namespace(context, 'base')
-        template_hooks = _import_ns.get('template_hooks', context.get('template_hooks', UNDEFINED))
+        JIDN_theme = _import_ns.get('JIDN_theme', context.get('JIDN_theme', UNDEFINED))
+        js_date_format = _import_ns.get('js_date_format', context.get('js_date_format', UNDEFINED))
+        footer = _mako_get_namespace(context, 'footer')
         __M_writer = context.writer()
+        __M_writer('\n')
         __M_writer('\n')
         __M_writer('\n')
         __M_writer('\n')
@@ -69,7 +73,7 @@ def render_body(context,**pageargs):
 
         __M_writer('\n')
         __M_writer(str(template_hooks['extra_head']()))
-        __M_writer('\n</head>\n<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">\n')
+        __M_writer('\n<link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css">\n</head>\n')
         if JIDN_theme:
             __M_writer('<body class="')
             __M_writer(str(JIDN_theme))
@@ -79,7 +83,7 @@ def render_body(context,**pageargs):
         __M_writer('    <a href="#content" class="sr-only sr-only-focusable">')
         __M_writer(str(messages("Skip to main content")))
         __M_writer('</a>\n    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular\n            styles, `#sidebar-checkbox` for behavior. -->\n    <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">\n\n    <!-- Toggleable sidebar -->\n    <div class="sidebar" id="sidebar">\n')
-        __M_writer('\n        <nav role="navigation" class="sidebar-nav">\n          <a class="sidebar-nav-item" href="/"><i class="fa fa-2x fa-fw fa-home" /> Home</a>\n          <a class="sidebar-nav-item" href="/blog"><i class="fa fa-2x fa-fw fa-user-circle" /> Blog</a>\n        </nav>\n        ')
+        __M_writer('\n        <nav role="navigation" class="sidebar-nav">\n          <a class="sidebar-nav-item" href="/"><i class="fa fa-2x fa-fw fa-home" /> Home</a>\n          <!--a class="sidebar-nav-item" href="/blog"><i class="fa fa-2x fa-fw fa-user-circle" /> Blog</a-->\n          <a class="sidebar-nav-item" href="/pages/about/index.html"><i class="fa fa-2x fa-fw fa-user-circle" /> About</a-->\n\t\t  <!--a class="sidebar-nav-item" href="/pages/research/index.html"><i class="fa fa-2x fa-fw fa-flask" /> Research</a-->\n\t\t  <a class="sidebar-nav-item" href="/pages/cv/index.html"><i class="fa fa-2x fa-fw fa-graduation-cap" /> Curriculum Vitae</a-->\n\t\t  <a class="sidebar-nav-item" href="/pages/publications/index.html"><i class="fa fa-2x fa-fw fa-book" /> Publications</a-->\n        </nav>\n        ')
         __M_writer(str(header.html_navigation_links()))
         __M_writer('\n    </div>\n\n    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the\n         content to avoid any CSS collisions with our real content. -->\n    <div class="wrap">\n      <div class="masthead">\n        <div class="container">\n          ')
         __M_writer(str(header.html_site_title()))
@@ -161,6 +165,6 @@ def render_extra_js(context,**pageargs):
 
 """
 __M_BEGIN_METADATA
-{"filename": "themes/jidn/templates/base.tmpl", "uri": "base.tmpl", "source_encoding": "utf-8", "line_map": {"23": 2, "26": 3, "29": 4, "32": 0, "59": 2, "60": 3, "61": 4, "62": 5, "63": 5, "64": 6, "65": 6, "70": 9, "71": 10, "72": 10, "73": 13, "74": 14, "75": 14, "76": 14, "77": 15, "78": 16, "79": 18, "80": 18, "81": 18, "82": 30, "83": 35, "84": 35, "85": 43, "86": 43, "91": 48, "92": 49, "93": 49, "94": 53, "95": 53, "96": 54, "97": 54, "98": 55, "99": 55, "100": 58, "101": 58, "102": 59, "103": 59, "104": 59, "105": 59, "110": 62, "116": 7, "126": 7, "132": 48, "147": 62, "162": 147}}
+{"filename": "themes/jidn/templates/base.tmpl", "uri": "base.tmpl", "source_encoding": "utf-8", "line_map": {"23": 2, "26": 3, "29": 4, "32": 5, "35": 0, "62": 2, "63": 3, "64": 4, "65": 5, "66": 6, "67": 6, "68": 7, "69": 7, "74": 10, "75": 11, "76": 11, "77": 14, "78": 15, "79": 15, "80": 15, "81": 16, "82": 17, "83": 19, "84": 19, "85": 19, "86": 31, "87": 40, "88": 40, "89": 48, "90": 48, "95": 53, "96": 54, "97": 54, "98": 58, "99": 58, "100": 59, "101": 59, "102": 60, "103": 60, "104": 63, "105": 63, "106": 64, "107": 64, "108": 64, "109": 64, "114": 67, "120": 8, "130": 8, "136": 53, "151": 67, "166": 151}}
 __M_END_METADATA
 """
