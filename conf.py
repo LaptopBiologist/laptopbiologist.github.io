@@ -217,11 +217,11 @@ THEME_CONFIG = {
 #     )
 
 POSTS = (
-    ("posts/*.rst", "blog", "post.tmpl"),
-    ("posts/*.md", "blog", "post.tmpl"),
-    ("posts/*.txt", "blog", "post.tmpl"),
-    ("posts/*.html", "blog", "post.tmpl"),
-    ("posts/*.ipynb", "blog", "post.tmpl")
+    ("posts/*.rst", "posts", "post.tmpl"),
+    ("posts/*.md", "posts", "post.tmpl"),
+    ("posts/*.txt", "posts", "post.tmpl"),
+    ("posts/*.html", "posts", "post.tmpl"),
+    ("posts/*.ipynb", "posts", "post.tmpl")
 )
 PAGES = (
     ("pages/*.rst", "", "page.tmpl"),
@@ -535,7 +535,7 @@ HIDDEN_AUTHORS = ['Guest']
 # Final location for the main blog page and sibling paginated pages is
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
 # (translatable)
-INDEX_PATH = "blog"
+##INDEX_PATH = "blog"
 
 # Optional HTML that displayed on “main” blog index.html files.
 # May be used for a greeting. (translatable)
@@ -1002,7 +1002,7 @@ STRIP_INDEXES = True
 # This can be disabled on a per-page/post basis by adding
 #    .. pretty_url: False
 # to the metadata.
-PRETTY_URLS = False
+PRETTY_URLS = True
 
 # If True, publish future dated posts right away instead of scheduling them.
 # Defaults to False.
