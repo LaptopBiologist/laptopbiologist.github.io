@@ -2,14 +2,20 @@
 <html prefix="" lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="Genomics, Pythonics, Philosoophics, I am restricting myself to things ending in -ic">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Laptop Biology | Laptop Biology</title>
-<link href="assets/css/all.css" rel="stylesheet" type="text/css">
+<title>Maybe now I can actually learn C++ - Interactive C++ in Jupyter Notebooks | Laptop Biology</title>
+<link href="../../assets/css/all.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
-<link rel="canonical" href="https://laptopbiologist.github.io/">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/using-c%2B%2B-in-Jupyter/" type="text/html">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="https://laptopbiologist.github.io/posts/using-c%2B%2B-in-Jupyter/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Michael McGurk">
+<meta property="og:site_name" content="Laptop Biology">
+<meta property="og:title" content="Maybe now I can actually learn C++ - Interactive C++ in Jupyter Notebo">
+<meta property="og:url" content="https://laptopbiologist.github.io/posts/using-c%2B%2B-in-Jupyter/">
+<meta property="og:description" content="Okay. This was a pain in the butt. But it was worth it.
+The reason I'm so comfortable with Python is that you don't have to explicitly compile it to understand how code behaves. You can write function">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2018-11-11T09:29:00Z">
 </head>
 <body>
     <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -17,14 +23,14 @@
             styles, `#sidebar-checkbox` for behavior. -->
     <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"><!-- Toggleable sidebar --><div class="sidebar" id="sidebar">
 
-        <nav role="navigation" class="sidebar-nav"><a class="sidebar-nav-item" href="."><i class="fa fa-2x fa-fw fa-home"></i> Home</a>
-          <a class="sidebar-nav-item" href="blog"><i class="fa fa-2x fa-fw fa-user-circle"></i> Blog</a>
-        </nav><nav id="menu" role="navigation" class="sidebar-nav"><a class="sidebar-nav-item" href="cv/">Curriculum Vitae</a>
-        <a class="sidebar-nav-item" href="publications/">Publications</a>
-        <a class="sidebar-nav-item" href="about/">About</a>
-        <a class="sidebar-nav-item" href="archive.html">Archive</a>
-        <a class="sidebar-nav-item" href="categories/">Tags</a>
-        <a class="sidebar-nav-item" href="rss.xml">RSS feed</a>
+        <nav role="navigation" class="sidebar-nav"><a class="sidebar-nav-item" href="../../"><i class="fa fa-2x fa-fw fa-home"></i> Home</a>
+          <a class="sidebar-nav-item" href="../../blog"><i class="fa fa-2x fa-fw fa-user-circle"></i> Blog</a>
+        </nav><nav id="menu" role="navigation" class="sidebar-nav"><a class="sidebar-nav-item" href="../../cv/">Curriculum Vitae</a>
+        <a class="sidebar-nav-item" href="../../publications/">Publications</a>
+        <a class="sidebar-nav-item" href="../../about/">About</a>
+        <a class="sidebar-nav-item" href="../../archive.html">Archive</a>
+        <a class="sidebar-nav-item" href="../../categories/">Tags</a>
+        <a class="sidebar-nav-item" href="../../rss.xml">RSS feed</a>
     
     
     </nav>
@@ -45,14 +51,17 @@
 
       <div class="container content" id="content">
         
-
-<div class="posts">
-    <article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/using-c%2B%2B-in-Jupyter/" class="u-url">Maybe now I can actually learn C++ - Interactive C++ in Jupyter Notebooks</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/BlogPosting"><header><h1 class="post-title p-name entry-title" itemprop="headline">
+      <a href="https://laptopbiologist.github.io/posts/using-c%2B%2B-in-Jupyter/" class="u-url">Maybe now I can actually learn C++ - Interactive C++ in Jupyter Notebooks</a>
+</h1>
         <div class="metadata">
-            <p class="dateline"><a href="posts/using-c%2B%2B-in-Jupyter/" rel="bookmark"><time class="post-date published dt-published" datetime="2018-11-11T09:29:00+00:00" title="2018-11-11 09:29">2018-11-11 09:29</time></a></p>
+        <meta itemprop="inLanguage" content="en">
+<p class="dateline">
+            <time class="post-date published dt-published" datetime="2018-11-11T09:29:00+00:00" itemprop="datePublished" title="2018-11-11 09:29">2018-11-11 09:29</time></p>
         </div>
-    </header><div class="e-content entry-content">
-    <div tabindex="-1" id="notebook" class="border-box-sizing">
+        
+
+    </header><section class="e-content entry-content" itemprop="articleBody text"><div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
 <div class="cell border-box-sizing text_cell rendered">
@@ -234,20 +243,49 @@ Just some notes on running this on the WSL. The WSL is not designed to run GUIs 
     </div>
   </div>
 
-    </div>
-    </article>
+    </section><aside class="sharing no-print"><a href="#content" aria-label="Post beginning">
+       <i class="fa fa-2x fa-fw fa-arrow-circle-up" aria-hidden="true" title="Post beginning"></i>
+    </a>
+    <span class="post-sharing">
+     <a href="http://twitter.com/share?text=Maybe+now+I+can+actually+learn+C%2B%2B+-+Interactive+C%2B%2B+in+Jupyter+Notebooks&amp;url=https%3A%2F%2Flaptopbiologist.github.io%2Fposts%2Fusing-c%252B%252B-in-Jupyter%2F" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" aria-label="Share on Twitter">
+       <i class="fa fa-2x fa-fw fa-twitter-square" aria-hidden="true" title="Share on Twitter">
+     </i></a>
+     <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flaptopbiologist.github.io%2Fposts%2Fusing-c%252B%252B-in-Jupyter%2F" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" aria-label="Share on Facebook">
+       <i class="fa fa-2x fa-fw fa-facebook-square" style="margin-left: -8px" aria-hidden="true" title="Share of Facebook">
+     </i></a>
+     <a href="https://plus.google.com/share?url=https%3A%2F%2Flaptopbiologist.github.io%2Fposts%2Fusing-c%252B%252B-in-Jupyter%2F" aria-label="Share on Google+" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+       <i class="fa fa-2x fa-fw fa-google-plus-square" style="margin-left: -8px" aria-hidden="true" title="Share on Google+">
+     </i></a>
+     </span>
+</aside><div itemprop="author" itemscope itemtype="http://schema.org/Person">
+<footer class="byline author author-bio vcard"><hr>
+<meta itemprop="image" content="http://example.com/my-image.jpg">
+<div class="author-image" style="background: url(http://example.com/my-image.jpg)"></div>
+     <h3 class="byline-name fn" itemprop="name">Michael McGurk
+        <span class="post-sharing">
+            <a href="mailto:mpm289@cornell.edu?subject=Maybe%20now%20I%20can%20actually%20learn%20C++%20-%20Interactive%20C++%20in%20Jupyter%20Notebooks" aria-label="Email author">
+            <i class="fa fa-2 fa-fw fa-envelope" aria-hidden="true" title="Email author">
+            </i></a>
+        </span>
+        <span class="post-sharing">
+            <a href="https://twitter.com/LaptopBiologist" target="_blank" arial-label="Go to Twitter"> <i class="fa fa-fw fa-twitter" aria-hidden="true" title="Twitter"></i></a>
+            <a href="https://github.com/LaptopBiologist" target="_blank" arial-label="Go to GitHub"> <i class="fa fa-fw fa-github" aria-hidden="true" title="GitHub"></i></a>
+        </span>
+     </h3>
+     <p class="bio">I've information vegetable, animal, and mineral,
+I'm very well acquainted, too, with matters mathematical,
+I understand equations, both the simple and quadratical,
+About binomial theorem I'm teeming with a lot o' news........
+With many cheerful facts about the square of the hypotenuse!
+</p>
+     <p><i class="fa fa-map-marker"></i> Ithaca, NY  USA</p>
+</footer>
 </div>
-
-
-
 
 
     
 
-
-
-        
-        <footer id="footer"><p>Contents © 2018         <a href="mailto:mpm289@cornell.edu">Michael McGurk</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+</article><footer id="footer"><p>Contents © 2018         <a href="mailto:mpm289@cornell.edu">Michael McGurk</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>
@@ -256,7 +294,7 @@ Just some notes on running this on the WSL. The WSL is not designed to run GUIs 
     
     
     
-            <script src="assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+            <script src="../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
     moment.locale("en");
     fancydates(0, "YYYY-MM-DD HH:mm");
     </script><!-- end fancy dates -->
