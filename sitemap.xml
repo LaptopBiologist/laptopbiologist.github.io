@@ -6,12 +6,16 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
-  <loc>https://laptopbiologist.github.io/</loc>
-  <lastmod>2018-11-11T17:14:00Z</lastmod>
+  <loc>https://laptopbiologist.github.io/Home.html</loc>
+  <lastmod>2018-11-11T17:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://laptopbiologist.github.io/Home/</loc>
   <lastmod>2018-11-11T17:14:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://laptopbiologist.github.io/about.html</loc>
+  <lastmod>2018-11-11T17:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://laptopbiologist.github.io/about/</loc>
@@ -19,7 +23,7 @@
  </url>
  <url>
   <loc>https://laptopbiologist.github.io/archive.html</loc>
-  <lastmod>2018-11-11T17:36:00Z</lastmod>
+  <lastmod>2018-11-11T17:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://laptopbiologist.github.io/blog/</loc>
@@ -28,6 +32,10 @@
  <url>
   <loc>https://laptopbiologist.github.io/categories/</loc>
   <lastmod>2018-11-11T17:14:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://laptopbiologist.github.io/cv.html</loc>
+  <lastmod>2018-11-11T17:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://laptopbiologist.github.io/cv/</loc>
@@ -40,6 +48,10 @@
  <url>
   <loc>https://laptopbiologist.github.io/listings/</loc>
   <lastmod>2018-11-11T17:14:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://laptopbiologist.github.io/publications.html</loc>
+  <lastmod>2018-11-11T17:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://laptopbiologist.github.io/publications/</loc>
