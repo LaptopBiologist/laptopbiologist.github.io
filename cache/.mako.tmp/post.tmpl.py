@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1541956490.351699
+_modified_time = 1541956798.326421
 _enable_loop = True
 _template_filename = 'themes/jidn/templates/post.tmpl'
 _template_uri = 'post.tmpl'
@@ -73,23 +73,23 @@ def render_body(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
         __M_locals = __M_dict_builtin(pageargs=pageargs)
-        math = _mako_get_namespace(context, 'math')
         def content():
             return render_content(context._locals(__M_locals))
-        post = context.get('post', UNDEFINED)
-        comments = _mako_get_namespace(context, 'comments')
-        parent = context.get('parent', UNDEFINED)
-        pheader = _mako_get_namespace(context, 'pheader')
-        def sharing():
-            return render_sharing(context._locals(__M_locals))
-        messages = context.get('messages', UNDEFINED)
-        helper = _mako_get_namespace(context, 'helper')
-        def extra_head():
-            return render_extra_head(context._locals(__M_locals))
-        JIDN = context.get('JIDN', UNDEFINED)
+        math = _mako_get_namespace(context, 'math')
         def bio():
             return render_bio(context._locals(__M_locals))
+        post = context.get('post', UNDEFINED)
+        def sharing():
+            return render_sharing(context._locals(__M_locals))
+        parent = context.get('parent', UNDEFINED)
+        pheader = _mako_get_namespace(context, 'pheader')
+        messages = context.get('messages', UNDEFINED)
         site_has_comments = context.get('site_has_comments', UNDEFINED)
+        JIDN = context.get('JIDN', UNDEFINED)
+        def extra_head():
+            return render_extra_head(context._locals(__M_locals))
+        comments = _mako_get_namespace(context, 'comments')
+        helper = _mako_get_namespace(context, 'helper')
         __M_writer = context.writer()
         __M_writer('\n')
         __M_writer('\n')
@@ -126,10 +126,10 @@ def render_extra_head(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
         helper = _mako_get_namespace(context, 'helper')
-        def extra_head():
-            return render_extra_head(context)
         math = _mako_get_namespace(context, 'math')
         post = context.get('post', UNDEFINED)
+        def extra_head():
+            return render_extra_head(context)
         parent = context.get('parent', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n    ')
@@ -176,15 +176,15 @@ def render_content(context,**pageargs):
         def content():
             return render_content(context)
         math = _mako_get_namespace(context, 'math')
-        post = context.get('post', UNDEFINED)
-        comments = _mako_get_namespace(context, 'comments')
-        pheader = _mako_get_namespace(context, 'pheader')
-        def sharing():
-            return render_sharing(context)
-        messages = context.get('messages', UNDEFINED)
         def bio():
             return render_bio(context)
+        def sharing():
+            return render_sharing(context)
+        post = context.get('post', UNDEFINED)
+        pheader = _mako_get_namespace(context, 'pheader')
+        messages = context.get('messages', UNDEFINED)
         site_has_comments = context.get('site_has_comments', UNDEFINED)
+        comments = _mako_get_namespace(context, 'comments')
         __M_writer = context.writer()
         __M_writer('\n<article class="post-')
         __M_writer(str(post.meta('type')))
@@ -255,10 +255,10 @@ def render_sharing(context,**pageargs):
 def render_bio(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
-        post = context.get('post', UNDEFINED)
         JIDN = context.get('JIDN', UNDEFINED)
         def bio():
             return render_bio(context)
+        post = context.get('post', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n<div itemprop="author" itemscope itemtype="http://schema.org/Person">\n')
         if post.author() in JIDN:
