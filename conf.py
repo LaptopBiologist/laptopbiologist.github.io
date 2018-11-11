@@ -1341,7 +1341,7 @@ WARN_ABOUT_TAG_METADATA = False
 # It can be anything, data, functions, modules, etc.
 GLOBAL_CONTEXT = {
     "JIDN": {BLOG_AUTHOR: {   # Or "Given Surname" for alternate authors
-            "image": "http://example.com/my-image.jpg",
+            "image": "",
 
             ## The following are all individually optional
             "email": 'mpm289@cornell.edu',  # or something else for alternate authors
