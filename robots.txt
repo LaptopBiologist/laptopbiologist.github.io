@@ -1,0 +1,4 @@
+Sitemap: https://laptopbiologist.github.io/sitemapindex.xml
+
+User-Agent: *
+Host: laptopbiologist.github.io
