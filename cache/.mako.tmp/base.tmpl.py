@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1541956797.8563957
+_modified_time = 1541957805.7492142
 _enable_loop = True
 _template_filename = 'themes/jidn/templates/base.tmpl'
 _template_uri = 'base.tmpl'
@@ -37,24 +37,24 @@ def render_body(context,**pageargs):
         _mako_get_namespace(context, 'base')._populate(_import_ns, ['*'])
         _mako_get_namespace(context, 'header')._populate(_import_ns, ['*'])
         _mako_get_namespace(context, 'footer')._populate(_import_ns, ['*'])
-        def extra_js():
-            return render_extra_js(context._locals(__M_locals))
-        def content():
-            return render_content(context._locals(__M_locals))
-        js_date_format = _import_ns.get('js_date_format', context.get('js_date_format', UNDEFINED))
-        lang = _import_ns.get('lang', context.get('lang', UNDEFINED))
-        body_end = _import_ns.get('body_end', context.get('body_end', UNDEFINED))
-        date_fanciness = _import_ns.get('date_fanciness', context.get('date_fanciness', UNDEFINED))
-        momentjs_locales = _import_ns.get('momentjs_locales', context.get('momentjs_locales', UNDEFINED))
-        base = _mako_get_namespace(context, 'base')
-        messages = _import_ns.get('messages', context.get('messages', UNDEFINED))
-        header = _mako_get_namespace(context, 'header')
-        set_locale = _import_ns.get('set_locale', context.get('set_locale', UNDEFINED))
-        template_hooks = _import_ns.get('template_hooks', context.get('template_hooks', UNDEFINED))
-        JIDN_theme = _import_ns.get('JIDN_theme', context.get('JIDN_theme', UNDEFINED))
         def extra_head():
             return render_extra_head(context._locals(__M_locals))
         footer = _mako_get_namespace(context, 'footer')
+        lang = _import_ns.get('lang', context.get('lang', UNDEFINED))
+        header = _mako_get_namespace(context, 'header')
+        JIDN_theme = _import_ns.get('JIDN_theme', context.get('JIDN_theme', UNDEFINED))
+        def content():
+            return render_content(context._locals(__M_locals))
+        base = _mako_get_namespace(context, 'base')
+        body_end = _import_ns.get('body_end', context.get('body_end', UNDEFINED))
+        momentjs_locales = _import_ns.get('momentjs_locales', context.get('momentjs_locales', UNDEFINED))
+        js_date_format = _import_ns.get('js_date_format', context.get('js_date_format', UNDEFINED))
+        def extra_js():
+            return render_extra_js(context._locals(__M_locals))
+        messages = _import_ns.get('messages', context.get('messages', UNDEFINED))
+        template_hooks = _import_ns.get('template_hooks', context.get('template_hooks', UNDEFINED))
+        date_fanciness = _import_ns.get('date_fanciness', context.get('date_fanciness', UNDEFINED))
+        set_locale = _import_ns.get('set_locale', context.get('set_locale', UNDEFINED))
         __M_writer = context.writer()
         __M_writer('\n')
         __M_writer('\n')
