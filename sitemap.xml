@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://laptopbiologist.github.io/</loc>
-  <lastmod>2018-11-11T17:49:00Z</lastmod>
+  <lastmod>2018-11-11T17:53:00Z</lastmod>
  </url>
  <url>
   <loc>https://laptopbiologist.github.io/2018/</loc>
@@ -40,6 +40,22 @@
  <url>
   <loc>https://laptopbiologist.github.io/listings/</loc>
   <lastmod>2018-11-11T17:14:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://laptopbiologist.github.io/pages/Home/</loc>
+  <lastmod>2018-11-11T17:53:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://laptopbiologist.github.io/pages/about/</loc>
+  <lastmod>2018-11-11T17:53:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://laptopbiologist.github.io/pages/cv/</loc>
+  <lastmod>2018-11-11T17:53:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://laptopbiologist.github.io/pages/publications/</loc>
+  <lastmod>2018-11-11T17:53:00Z</lastmod>
  </url>
  <url>
   <loc>https://laptopbiologist.github.io/posts/using-c%2B%2B-in-Jupyter/</loc>
