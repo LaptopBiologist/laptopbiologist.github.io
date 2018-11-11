@@ -98,3 +98,4 @@
 'render_pages:output\\pages\\cv\\index.html', (140800, 2381)
 'render_sources:output\\pages\\cv\\index.md', (143360, 230)
 'render_pages:output\\pages\\Home\\index.html', (143872, 2397)
+'redirect:output\\blog', (146432, 138)
