@@ -17,7 +17,7 @@
 'copy_assets:output\\assets\\css\\baguetteBox.min.css', (14336, 417)
 'copy_assets:output\\assets\\js\\gallery.min.js', (14848, 404)
 'copy_assets:output\\assets\\js\\fancydates.min.js', (15360, 410)
-'sitemap:output\\sitemap.xml', (2140672, 54196)
+'sitemap:output\\sitemap.xml', (2140672, 54195)
 'copy_assets', (16896, 56)
 'copy_assets:output\\assets\\css\\ipython.min.css', (17408, 410)
 'copy_files', (17920, 56)
